@@ -15,10 +15,10 @@
         </li>
       </ul>
     </section>
-    <!-- <form *ngIf="currentRoom.isPrivate" (ngSubmit)="addUserToRoom()">
+    <form *ngIf="currentRoom.isPrivate" (ngSubmit)="addUserToRoom()">
       <label for="user-name">Add user to {{ currentRoom.name }}</label>
       <input type="text" class="newUser-input" [(ngModel)]="newUser" name="user-name" id="user-name" placeholder="Enter username">
-    </form> -->
+    </form>
   </aside>
 
   <main class="chat-window">
@@ -30,14 +30,14 @@
       </ng-template>
       <span class="participants"></span>
     </header>
-    <!-- <section class="chat-session">
+    <section class="chat-session">
       <ul class="message-list">
         <li class="user-message" *ngFor="let message of messages">
           <span class="user-id">{{ message.senderId }}</span>
           <span>{{ message.text }}</span>
         </li>
       </ul>
-    </section> -->
+    </section>
     <div class="chatbox__messages" ng-repeat="message in messages">
       <div class="chatbox__messages__user-message">
         <div class="chatbox__messages__user-message--ind-message">
@@ -53,7 +53,7 @@
       </form>
     </footer>
   </main>
-  <!-- <aside class="sidebar right-sidebar">
+  <aside class="sidebar right-sidebar">
     <section class="room-section">
       <section *ngIf="currentUser.id" class="user-rooms">
           <h4>Rooms</h4>
@@ -93,5 +93,5 @@
         </label>
       </form>
     </section>
-  </aside> -->
+  </aside>
 </div> 
